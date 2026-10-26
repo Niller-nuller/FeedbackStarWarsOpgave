@@ -4,9 +4,10 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="add en getnextid function i jedi.js">
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="added deletejedi and updated exports">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/srcController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/srcController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/srcService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/srcService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/srcRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/srcRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,8 @@
     "last_opened_file_path": "C:/Users/niels/WebstormProjects/feedbackstarwars",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal"
+    "settings.editor.selected.configurable": "terminal",
+    "ts.external.directory.path": "C:\\Users\\gusta\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -118,7 +120,7 @@
       <workItem from="1793013234276" duration="369000" />
       <workItem from="1793013642497" duration="627000" />
       <workItem from="1793016737937" duration="98000" />
-      <workItem from="1793018506404" duration="1311000" />
+      <workItem from="1793018506404" duration="1987000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -176,7 +178,31 @@
       <option name="project" value="LOCAL" />
       <updated>1793019360198</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added createjedi function i service">
+      <option name="closed" value="true" />
+      <created>1793019836659</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1793019836659</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added updateJedi i service">
+      <option name="closed" value="true" />
+      <created>1793019913579</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1793019913579</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added deletejedi and updated exports">
+      <option name="closed" value="true" />
+      <created>1793019966297</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1793019966297</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +224,9 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Jesus Christ I hate Webstorm" />
     <MESSAGE value="add en getnextid function i jedi.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="add en getnextid function i jedi.js" />
+    <MESSAGE value="added createjedi function i service" />
+    <MESSAGE value="added updateJedi i service" />
+    <MESSAGE value="added deletejedi and updated exports" />
+    <option name="LAST_COMMIT_MESSAGE" value="added deletejedi and updated exports" />
   </component>
 </project>
