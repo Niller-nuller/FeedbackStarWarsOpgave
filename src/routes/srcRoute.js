@@ -1,7 +1,9 @@
-const express = require('express');
-const route = express.Router();
+const express = require("express");
 const srcController = require('../controllers/srcController.js');
 
-route.get('/jedi', srcController.getAllJedi);
+const routes = express.Router();
 
-module.exports = route;
+routes.get('/', srcController.getAllJedi);
+
+
+module.exports = routes;
