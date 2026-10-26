@@ -10,7 +10,7 @@ function readAllJedi() {
     return dataJedi.jedis;
 }
 function getJediById(id) {
-    const jedi = datajedi.jedis.find(j => j.id === parseInt(id));
+    const jedi = dataJedi.jedis.find(j => j.id === parseInt(id));
     if (!jedi) {
         throw createError(404, 'Jedi not found');
     }

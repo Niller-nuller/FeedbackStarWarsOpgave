@@ -5,8 +5,8 @@ function handleError(res, error) {
     res.status(status).json({error: error.message});
 }
 
-exports.getAllJedi = (req, res) => {
-    res.status(200).json({jedis: srcService.readAllJedi()});
+function getAllJedi(req, res) {
+    res.status(200).json(srcService.readAllJedi());
 }
 
 function getById(req, res) {
@@ -44,6 +44,7 @@ function deleteJedi(req, res) {
 }
 
 module.exports = {
+    getAllJedi,
     getById,
     createJedi,
     updateJedi,
