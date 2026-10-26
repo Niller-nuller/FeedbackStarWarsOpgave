@@ -41,7 +41,15 @@ function updateJedi(id, {name, role, planet}) {
     jedi.planet = planet;
     return jedi;
 }
+function deleteJedi(id) {
+    const index = dataJedi.jedis.findIndex(j => j.id === parseInt(id));
+    if (index === -1) {
+        throw createError(404, 'Jedi not found');
+    }
+    dataJedi.jedis.splice(index, 1);
+}
 
 
 
-module.exports = {readAllJedi, getJediById};
+
+module.exports = {readAllJedi, getJediById, createJedi, updateJedi, deleteJedi};
