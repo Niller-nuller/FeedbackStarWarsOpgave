@@ -1,0 +1,12 @@
+<changelist name="Changes" date="1793013396848" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/shelved.patch" />
+  <option name="DESCRIPTION" value="Changes" />
+  <binary>
+    <option name="AFTER_PATH" value="../jsonandyou2/node_modules/npm/node_modules/qrcode-terminal/example/basic.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/basic.png" />
+  </binary>
+  <binary>
+    <option name="AFTER_PATH" value="../ZombieGae/zombie-survival-backend/node_modules/nodemon/bin/windows-kill.exe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Changes/windows-kill.exe" />
+  </binary>
+</changelist>
