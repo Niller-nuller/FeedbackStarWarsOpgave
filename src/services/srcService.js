@@ -30,6 +30,17 @@ function createJedi({name, role, planet}) {
     dataJedi.jedis.push(jedi);
     return jedi;
 }
+function updateJedi(id, {name, role, planet}) {
+    const jedi = getJediById(id);
+
+    if (!name || !role || !planet) {
+        throw createError(400, 'Missing required fields');
+    }
+    jedi.name = name;
+    jedi.role = role;
+    jedi.planet = planet;
+    return jedi;
+}
 
 
 
