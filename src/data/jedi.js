@@ -9,4 +9,8 @@ let jedis = [
 
 let nextId = 2;
 
-module.exports = {jedis: jedis, nextId: nextId}
+function getNextId() {
+    return nextId++;
+}
+
+module.exports = {jedis, getNextId};
