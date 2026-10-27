@@ -1,4 +1,4 @@
-let jedis = [
+let entries = [
     {
     id: 1,
     name: "Luke Skywalker",
@@ -13,4 +13,4 @@ function getNextId() {
     return nextId++;
 }
 
-module.exports = {jedis, getNextId};
+module.exports = {jedis: entries, getNextId};

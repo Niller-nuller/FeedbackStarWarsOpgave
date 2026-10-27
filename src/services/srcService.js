@@ -1,4 +1,4 @@
-const dataJedi = require('../data/jedi.js');
+const dataJedi = require('../data/archive.js');
 
 function createError(status, message) {
     const error = new Error(message);
