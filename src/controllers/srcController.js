@@ -5,48 +5,48 @@ function handleError(res, error) {
     res.status(status).json({error: error.message});
 }
 
-function getAllJedi(req, res) {
-    res.status(200).json(srcService.readAllJedi());
+function getAllEntries(req, res) {
+    res.status(200).json(srcService.readAllEntries());
 }
 
 function getById(req, res) {
     try {
-        const jedi = srcService.getJediById(req.params.id);
-        res.status(200).json(jedi);
+        const entry = srcService.getEntryById(req.params.id);
+        res.status(200).json(entry);
     } catch (error) {
         handleError(res, error);
     }
 }
 
-function createJedi(req, res) {
+function createEntry(req, res) {
     try {
-        const jedi = srcService.createJedi(req.body);
-        res.status(201).json({status: "jedi has been created", jedi});
+        const entry = srcService.createEntry(req.body);
+        res.status(201).json({status: "entry has been created", entry});
     } catch (error) {
         handleError(res, error);
     }
 }
-function updateJedi(req, res) {
+function updateEntry(req, res) {
     try {
-        const jedi = srcService.updateJedi(req.params.id, req.body);
-        res.status(200).json({status: "jedi has been updated", jedi});
+        const entry = srcService.updateEntry(req.params.id, req.body);
+        res.status(200).json({status: "entry has been updated", entry});
     } catch (error) {
         handleError(res, error);
     }
 }
-function deleteJedi(req, res) {
+function deleteEntry(req, res) {
     try {
-        srcService.deleteJedi(req.params.id);
-        res.status(200).json({status: "jedi has been deleted"});
+        srcService.deleteEntry(req.params.id);
+        res.status(200).json({status: "entry has been deleted"});
     } catch (error) {
         handleError(res, error);
     }
 }
 
 module.exports = {
-    getAllJedi,
+    getAllEntries,
     getById,
-    createJedi,
-    updateJedi,
-    deleteJedi
+    createEntry,
+    updateEntry,
+    deleteEntry
 }

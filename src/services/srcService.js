@@ -1,4 +1,4 @@
-const dataJedi = require('../data/archive.js');
+const archiveEntries = require('../data/archive.js');
 
 function createError(status, message) {
     const error = new Error(message);
@@ -6,52 +6,51 @@ function createError(status, message) {
     return error;
 }
 
-function readAllJedi() {
-    return dataJedi.jedis;
+function readAllEntries() {
+    return archiveEntries.entries;
 }
-function getJediById(id) {
-    const jedi = dataJedi.jedis.find(j => j.id === parseInt(id));
-    if (!jedi) {
-        throw createError(404, 'Jedi not found');
+function getEntryById(id) {
+    const entry = archiveEntries.entries.find(j => j.id === parseInt(id));
+    if (!entry) {
+        throw createError(404, 'entry not found');
     }
-    return jedi;
+    return entry;
 }
-function createJedi({name, role, planet}) {
+function createEntry({name, role, planet}) {
 
     validateRole(role);
     validateName(name);
     validatePlanet(planet);
     // import rules for the diffent data types here
-    const jedi = {
-        id: dataJedi.getNextId(),
+    const entry = {
+        id: archiveEntries.getNextId(),
         name,
         role,
         planet
     };
-    dataJedi.jedis.push(jedi);
-    return jedi;
+    archiveEntries.entries.push(entry);
+    return entry;
 }
-function updateJedi(id, {name, role, planet}) {
-    const jedi = getJediById(id);
+function updateEntry(id, {name, role, planet}) {
+    const entry = getEntryById(id);
 
     validateName(name);
     validateRole(role);
     validatePlanet(planet);
-
     if (!name || !role || !planet) {
         throw createError(400, 'Missing required fields');
     }
-    jedi.name = name;
-    jedi.role = role;
-    jedi.planet = planet;
-    return jedi;
+    entry.name = name;
+    entry.role = role;
+    entry.planet = planet;
+    return entry;
 }
-function deleteJedi(id) {
-    const index = dataJedi.jedis.findIndex(j => j.id === parseInt(id));
+function deleteEntry(id) {
+    const index = archiveEntries.entries.findIndex(j => j.id === parseInt(id));
     if (index === -1) {
-        throw createError(404, 'Jedi not found');
+        throw createError(404, 'entry not found');
     }
-    dataJedi.jedis.splice(index, 1);
+    archiveEntries.entries.splice(index, 1);
 }
 
 function validateName(name) {
@@ -99,4 +98,4 @@ function validatePlanet(planet) {
 
 
 
-module.exports = {readAllJedi, getJediById, createJedi, updateJedi, deleteJedi};
+module.exports = {readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry};

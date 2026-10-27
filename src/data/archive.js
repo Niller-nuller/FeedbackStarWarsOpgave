@@ -13,4 +13,4 @@ function getNextId() {
     return nextId++;
 }
 
-module.exports = {jedis: entries, getNextId};
+module.exports = {entries, getNextId};
