@@ -4,7 +4,11 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Jesus Christ I hate Webstorm" />
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="service, controller, app, route,server, jedi og logger done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/srcRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/srcRoute.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -34,7 +43,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Niller-nuller/FeedbackStarWarsOpgave.git&quot;,
-    &quot;accountId&quot;: &quot;8724dfe5-654c-4f44-8f0e-f96da550ccd8&quot;
+    &quot;accountId&quot;: &quot;6c55ecd5-010e-4ea9-bd1d-25fbb305d187&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -73,6 +82,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "#1 on gustav-branch",
     "git.auto.fetch.suggestion.counter": "2",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "24.21.0",
@@ -80,7 +90,9 @@
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/niels/WebstormProjects/feedbackstarwars",
     "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "ts.external.directory.path": "C:\\Users\\gusta\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -91,7 +103,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
       </set>
     </attachedChunks>
   </component>
@@ -108,6 +120,7 @@
       <workItem from="1793013234276" duration="369000" />
       <workItem from="1793013642497" duration="627000" />
       <workItem from="1793016737937" duration="98000" />
+      <workItem from="1793018506404" duration="2757000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -149,7 +162,63 @@
       <option name="project" value="LOCAL" />
       <updated>1793013981030</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Jesus Christ I hate Webstorm">
+      <option name="closed" value="true" />
+      <created>1793019163897</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1793019163897</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add en getnextid function i jedi.js">
+      <option name="closed" value="true" />
+      <created>1793019360198</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1793019360198</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added createjedi function i service">
+      <option name="closed" value="true" />
+      <created>1793019836659</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1793019836659</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added updateJedi i service">
+      <option name="closed" value="true" />
+      <created>1793019913579</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1793019913579</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added deletejedi and updated exports">
+      <option name="closed" value="true" />
+      <created>1793019966297</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1793019966297</updated>
+    </task>
+    <task id="LOCAL-00011" summary="d">
+      <option name="closed" value="true" />
+      <created>1793020691548</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1793020691548</updated>
+    </task>
+    <task id="LOCAL-00012" summary="service, controller, app, route,server, jedi og logger done">
+      <option name="closed" value="true" />
+      <created>1793021255969</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1793021255969</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +239,12 @@
     <MESSAGE value="inital commit" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Jesus Christ I hate Webstorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jesus Christ I hate Webstorm" />
+    <MESSAGE value="add en getnextid function i jedi.js" />
+    <MESSAGE value="added createjedi function i service" />
+    <MESSAGE value="added updateJedi i service" />
+    <MESSAGE value="added deletejedi and updated exports" />
+    <MESSAGE value="d" />
+    <MESSAGE value="service, controller, app, route,server, jedi og logger done" />
+    <option name="LAST_COMMIT_MESSAGE" value="service, controller, app, route,server, jedi og logger done" />
   </component>
 </project>

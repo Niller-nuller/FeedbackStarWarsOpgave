@@ -1,7 +1,16 @@
-const express = require('express');
-const route = express.Router();
+const express = require("express");
 const srcController = require('../controllers/srcController.js');
 
-route.get('/jedi', srcController.getAllJedi);
+const routes = express.Router();
 
-module.exports = route;
+routes.get('/', srcController.getAllEntries);
+routes.get('/:id', srcController.getById);
+routes.post('/', srcController.createEntry);
+routes.put('/:id', srcController.updateEntry);
+routes.delete('/:id', srcController.deleteEntry);
+
+
+// add more routes here for other CRUD operations (create, update, delete) as needed
+
+
+module.exports = routes;
