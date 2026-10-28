@@ -12,7 +12,7 @@ function readAllEntries() {
 function getEntryById(id) {
     const entry = archiveEntries.entries.find(j => j.id === parseInt(id));
     if (!entry) {
-        throw createError(404, 'entry not found');
+        throw createError(404, `entry not found with requested id ${id}`);
     }
     return entry;
 }
@@ -60,7 +60,7 @@ function validateName(name) {
     if(typeof name !== 'string') {
         throw createError(400, 'Name is not a string');
     }
-    if(!name.trim().length<2) {
+    if(!name.trim().length>2) {
         throw createError(400, 'Name must be at least 3 characters');
     }
 }
@@ -91,7 +91,7 @@ function validatePlanet(planet) {
     if(!planet){
         throw createError(400, 'Planet is not given');
     }
-    if(typeof planet === 'string') {
+    if(typeof planet !== 'string') {
         throw createError(400, 'Planet must be a string');
     }
 }
