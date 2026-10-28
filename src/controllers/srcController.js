@@ -44,7 +44,16 @@ function deleteEntry(req, res) {
 }
 
 function download(req, res)  {
-
+    const filePath = srcService.downloadFile();
+    console.log(filePath)
+    res.status(200).download(filePath,'archive.json', (err) => {
+        if(err){
+            console.error(err);
+            if(!res.headersSent) {
+                res.status(500).send('Could not find the file');
+            }
+        }
+    });
 }
 
 function getToLuke(req, res) {

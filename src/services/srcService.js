@@ -1,6 +1,7 @@
 const archiveEntries = require('../data/archive.js');
 const {entries} = require("../data/archive");
 const {name} = require("express/lib/view");
+const path = require('path')
 
 function createError(status, message) {
     const error = new Error(message);
@@ -96,6 +97,10 @@ function validatePlanet(planet) {
     }
 }
 
+function downloadFile(){
+    return path.join(__dirname, '../data/archive.json');
+}
+
 function findLuke(){
     const name = "Luke Skywalker"
     const luke = archiveEntries.entries.find(entry => entry.name === name);
@@ -107,4 +112,4 @@ function findLuke(){
 
 
 
-module.exports = {readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry, findLuke};
+module.exports = {readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry,downloadFile ,findLuke};
