@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="service, controller, app, route,server, jedi og logger done">
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/srcService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/srcService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +41,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Niller-nuller/FeedbackStarWarsOpgave.git",
-    "accountId": "4c793b4a-6a84-4776-b915-461ea61c176b"
+    "accountId": "6c55ecd5-010e-4ea9-bd1d-25fbb305d187"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -92,7 +91,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "terminal",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+    "ts.external.directory.path": "C:\\Users\\gusta\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -103,7 +102,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
       </set>
     </attachedChunks>
   </component>
@@ -122,6 +121,7 @@
       <workItem from="1793016737937" duration="98000" />
       <workItem from="1793018506404" duration="2757000" />
       <workItem from="1793177813924" duration="361000" />
+      <workItem from="1793179823292" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
