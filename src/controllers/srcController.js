@@ -43,10 +43,20 @@ function deleteEntry(req, res) {
     }
 }
 
+function download(req, res)  {
+
+}
+
+function getToLuke(req, res) {
+    const luke = srcService.findLuke();
+    res.status(200).redirect(`/archive/${luke.id}`);
+}
 module.exports = {
     getAllEntries,
     getById,
     createEntry,
     updateEntry,
-    deleteEntry
+    deleteEntry,
+    download,
+    getToLuke
 }
