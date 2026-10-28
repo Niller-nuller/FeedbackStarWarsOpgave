@@ -4,7 +4,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="service, controller, app, route,server, jedi og logger done">
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Changed validation in srcService for validate name and planet. Name was set for less then 2 for string amount but message said that it was below 3 letters in a 4 letter name. &lt; has been change to &gt;. Changed validate planet, it checked if the sting is a string throw error that it is not a string. changed === to !==, if value is not a string it now throws the error as it should.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/srcRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/srcRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/srcService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/srcService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Niller-nuller/FeedbackStarWarsOpgave.git",
-    "accountId": "6c55ecd5-010e-4ea9-bd1d-25fbb305d187"
+    "accountId": "4c793b4a-6a84-4776-b915-461ea61c176b"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -91,7 +93,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "terminal",
-    "ts.external.directory.path": "C:\\Users\\gusta\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -102,7 +104,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
       </set>
     </attachedChunks>
   </component>
@@ -120,8 +122,7 @@
       <workItem from="1793013642497" duration="627000" />
       <workItem from="1793016737937" duration="98000" />
       <workItem from="1793018506404" duration="2757000" />
-      <workItem from="1793177813924" duration="361000" />
-      <workItem from="1793179823292" duration="320000" />
+      <workItem from="1793177813924" duration="2240000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -219,7 +220,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793021255969</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed validation in srcService for validate name and planet. Name was set for less then 2 for string amount but message said that it was below 3 letters in a 4 letter name. &lt; has been change to &gt;. Changed validate planet, it checked if the sting is a string throw error that it is not a string. changed === to !==, if value is not a string it now throws the error as it should.">
+      <option name="closed" value="true" />
+      <created>1793178472946</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1793178472946</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +255,7 @@
     <MESSAGE value="added deletejedi and updated exports" />
     <MESSAGE value="d" />
     <MESSAGE value="service, controller, app, route,server, jedi og logger done" />
-    <option name="LAST_COMMIT_MESSAGE" value="service, controller, app, route,server, jedi og logger done" />
+    <MESSAGE value="Changed validation in srcService for validate name and planet. Name was set for less then 2 for string amount but message said that it was below 3 letters in a 4 letter name. &lt; has been change to &gt;. Changed validate planet, it checked if the sting is a string throw error that it is not a string. changed === to !==, if value is not a string it now throws the error as it should." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed validation in srcService for validate name and planet. Name was set for less then 2 for string amount but message said that it was below 3 letters in a 4 letter name. &lt; has been change to &gt;. Changed validate planet, it checked if the sting is a string throw error that it is not a string. changed === to !==, if value is not a string it now throws the error as it should." />
   </component>
 </project>

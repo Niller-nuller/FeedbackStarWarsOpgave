@@ -12,7 +12,7 @@ function readAllEntries() {
 function getEntryById(id) {
     const entry = archiveEntries.entries.find(j => j.id === parseInt(id));
     if (!entry) {
-        throw createError(404, `entry not found with requested id ${id}`);
+        throw createError(404, `entry not found with requested id of: ${id}`);
     }
     return entry;
 }
@@ -34,12 +34,14 @@ function createEntry({name, role, planet}) {
 function updateEntry(id, {name, role, planet}) {
     const entry = getEntryById(id);
 
-    validateName(name);
-    validateRole(role);
-    validatePlanet(planet);
     if (!name || !role || !planet) {
         throw createError(400, 'Missing required fields');
     }
+
+    validateName(name);
+    validateRole(role);
+    validatePlanet(planet);
+
     entry.name = name;
     entry.role = role;
     entry.planet = planet;
@@ -60,7 +62,7 @@ function validateName(name) {
     if(typeof name !== 'string') {
         throw createError(400, 'Name is not a string');
     }
-    if(!name.trim().length>2) {
+    if(name.trim().length < 3) {
         throw createError(400, 'Name must be at least 3 characters');
     }
 }
