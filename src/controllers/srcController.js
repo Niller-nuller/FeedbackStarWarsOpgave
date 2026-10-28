@@ -37,7 +37,7 @@ function updateEntry(req, res) {
 function deleteEntry(req, res) {
     try {
         srcService.deleteEntry(req.params.id);
-        res.status(200).json({status: "entry has been deleted"});
+        res.status(204).json({status: "entry has been deleted"});
     } catch (error) {
         handleError(res, error);
     }
