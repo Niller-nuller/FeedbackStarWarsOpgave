@@ -1,4 +1,7 @@
 const archiveEntries = require('../data/archive.js');
+const {entries} = require("../data/archive");
+const {name} = require("express/lib/view");
+const path = require('path')
 
 function createError(status, message) {
     const error = new Error(message);
@@ -18,8 +21,8 @@ function getEntryById(id) {
 }
 function createEntry({name, role, planet}) {
 
-    validateRole(role);
     validateName(name);
+    validateRole(role);
     validatePlanet(planet);
     // import rules for the diffent data types here
     const entry = {
@@ -33,10 +36,6 @@ function createEntry({name, role, planet}) {
 }
 function updateEntry(id, {name, role, planet}) {
     const entry = getEntryById(id);
-
-    if (!name || !role || !planet) {
-        throw createError(400, 'Missing required fields');
-    }
 
     validateName(name);
     validateRole(role);
@@ -98,6 +97,19 @@ function validatePlanet(planet) {
     }
 }
 
+function downloadFile(){
+    return path.join(__dirname, '../data/archive.json');
+}
+
+function findLuke(){
+    const name = "Luke Skywalker"
+    const luke = archiveEntries.entries.find(entry => entry.name === name);
+    if(luke === undefined){
+        throw createError(500, "Luke is missing!");
+    }
+    return luke;
+}
 
 
-module.exports = {readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry};
+
+module.exports = {readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry,downloadFile ,findLuke};

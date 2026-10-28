@@ -4,9 +4,11 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="mermaid splash">
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/srcController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/srcController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/srcRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/srcRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/srcService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/srcService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +84,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "NIller",
     "git.auto.fetch.suggestion.counter": "2",
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "24.21.0",
@@ -123,9 +125,7 @@
       <workItem from="1793013642497" duration="627000" />
       <workItem from="1793016737937" duration="98000" />
       <workItem from="1793018506404" duration="2757000" />
-      <workItem from="1793177813924" duration="2240000" />
-      <workItem from="1793180667693" duration="319000" />
-      <workItem from="1793181041972" duration="692000" />
+      <workItem from="1793177813924" duration="6123000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -231,15 +231,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793178472946</updated>
     </task>
-    <task id="LOCAL-00014" summary="mermaid splash">
+    <task id="LOCAL-00014" summary="Changed routes so that the server accepts all routes and that the routes themselves deceide if it is valid or not.&#10;&#10;Changed validate name again so that it checks if the name is and not if the name is not a certin lentgh.">
       <option name="closed" value="true" />
-      <created>1793180909224</created>
+      <created>1793180207137</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1793180909224</updated>
+      <updated>1793180207138</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times.">
+      <option name="closed" value="true" />
+      <created>1793182043951</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1793182043951</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +275,8 @@
     <MESSAGE value="d" />
     <MESSAGE value="service, controller, app, route,server, jedi og logger done" />
     <MESSAGE value="Changed validation in srcService for validate name and planet. Name was set for less then 2 for string amount but message said that it was below 3 letters in a 4 letter name. &lt; has been change to &gt;. Changed validate planet, it checked if the sting is a string throw error that it is not a string. changed === to !==, if value is not a string it now throws the error as it should." />
-    <MESSAGE value="mermaid splash" />
-    <option name="LAST_COMMIT_MESSAGE" value="mermaid splash" />
+    <MESSAGE value="Changed routes so that the server accepts all routes and that the routes themselves deceide if it is valid or not.&#10;&#10;Changed validate name again so that it checks if the name is and not if the name is not a certin lentgh." />
+    <MESSAGE value="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times." />
   </component>
 </project>
