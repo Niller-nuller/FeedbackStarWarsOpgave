@@ -78,6 +78,11 @@ Vis data'en ikke passer sender vi en passende status kode tilbare med et svar p�
 
 4. "Hvordan HTTP-statuskoder anvendes."
 
+http statuskoderne bliver brugt til at svarer tilbage på om forspørgelsen 
+som klienten har sendt er blevet gennemført eller fejlede.
+når kalder på creatEntry bruger vi status kode 201 vis kreationen af en ny entry er gået igennem men vis der gik noget galt bruger vi status kode 500 server error.
+vis vi nu ledte efter en entry med et id i findEntryById så vil vi sende en status kode 200 altså OK for at fortælle at forspørgelsen er modtage, men vi bruger ikke 201 fordi 201 bliver kun brugt vis forspørgelsen handler om at udgør en opgave eller slette/skabe noget.
+vis man gik op search baren og sågte efter /stith som vi ikke har routed for så sender vi den klassiske 404 page not found.-G.olsen
 
 5. "Hvordan applikationen er opdelt. "
 
