@@ -57,8 +57,12 @@ function download(req, res)  {
 }
 
 function getToLuke(req, res) {
+
     const luke = srcService.findLuke();
-    res.status(200).redirect(`/archive/${luke.id}`);
+    if(luke === undefined){
+        return res.status(500).json({error: "Luke is missing!"});
+    }
+    res.status(200).redirect(`/api/archive/${luke.id}`);
 }
 module.exports = {
     getAllEntries,

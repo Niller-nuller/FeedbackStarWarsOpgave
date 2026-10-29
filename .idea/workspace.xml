@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="l">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/srcController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/srcController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="NIller" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,12 +39,12 @@
     &quot;assignee&quot;: &quot;Niller-nuller&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Niller-nuller/FeedbackStarWarsOpgave.git&quot;,
-    &quot;accountId&quot;: &quot;fa24a1da-2622-4fd2-ac2d-c3a1e6d05eae&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Niller-nuller/FeedbackStarWarsOpgave.git",
+    "accountId": "8724dfe5-654c-4f44-8f0e-f96da550ccd8"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
   &quot;fromUser&quot;: false
@@ -81,11 +82,11 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "niller2",
     "git.auto.fetch.suggestion.counter": "2",
     "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "26.10.0",
-    "javascript.nodejs.core.library.typings.version": "26.6.6",
+    "javascript.nodejs.core.library.configured.version": "24.21.0",
+    "javascript.nodejs.core.library.typings.version": "24.19.2",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/niels/WebstormProjects/feedbackstarwars",
     "node.js.detected.package.jshint": "true",
@@ -104,7 +105,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10968.77" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
       </set>
     </attachedChunks>
   </component>
@@ -125,6 +126,7 @@
       <workItem from="1793177813924" duration="6123000" />
       <workItem from="1793264491024" duration="15000" />
       <workItem from="1793264528607" duration="1270000" />
+      <workItem from="1793274172528" duration="1660000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />

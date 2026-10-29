@@ -7,7 +7,8 @@ const app = express();
 app.use(express.json());
 app.use(logger);
 
-app.use('', routes);
+app.use('/api', routes);
+
 app.use((req, res ) => {
     res.status(404).json({error: 'Page Not Found'})
 });
