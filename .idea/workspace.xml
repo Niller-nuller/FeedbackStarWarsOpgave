@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BackgroundAgentGlobalSettings">
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Added Postman Test.">
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="mermaid splash">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +15,6 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_C:/Users/niels/WebstormProjects/FeedbackStarWarsOpgave" value="3LNk74j7o99HOKQW8UpboEW3WH4" />
       <entry key="_C:/Users/niels/WebstormProjects/feedbackstarwars" value="3LEJMZs975W9wU2m03Rv6jlKmxH" />
     </persistenceIdMap>
   </component>
@@ -29,10 +26,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="INCOMING_COMMITS_CHECK_STRATEGY" value="FETCH" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="NIller" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,73 +41,10 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Niller-nuller/FeedbackStarWarsOpgave&quot;,
-    &quot;accountId&quot;: &quot;1bf659aa-578c-4782-930f-e28aad028a20&quot;
+    &quot;url&quot;: &quot;https://github.com/Niller-nuller/FeedbackStarWarsOpgave.git&quot;,
+    &quot;accountId&quot;: &quot;6c55ecd5-010e-4ea9-bd1d-25fbb305d187&quot;
   }
 }</component>
-  <component name="McpProjectServerCommands">
-    <commands />
-    <urls />
-  </component>
-  <component name="NextEditCompletionFeaturesState">
-    <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000000042" />
-      <entry key="S30" value="1.0000162759355824" />
-      <entry key="S60" value="1.0040345400814745" />
-      <entry key="M2" value="1.065882140810693" />
-      <entry key="M5" value="2.6673744103318677" />
-      <entry key="M10" value="15.587812081080436" />
-      <entry key="M15" value="34.15361090823508" />
-      <entry key="M30" value="80.33333104916952" />
-      <entry key="H1" value="131.14521601136" />
-      <entry key="H2" value="217.89559749083892" />
-      <entry key="H4" value="395.16007917567777" />
-      <entry key="D1" value="862.1909570239703" />
-      <entry key="W1" value="1009.4971249011525" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.0633827826385284E-186" />
-      <entry key="S5" value="6.229892195209637E-75" />
-      <entry key="S10" value="7.894846804927016E-38" />
-      <entry key="S30" value="4.555486825007806E-13" />
-      <entry key="S60" value="8.180435221165541E-7" />
-      <entry key="M2" value="0.0012184520468441627" />
-      <entry key="M5" value="0.11235236363427148" />
-      <entry key="M10" value="0.6056518347239411" />
-      <entry key="M15" value="1.1406408036414084" />
-      <entry key="M30" value="2.2894566901655797" />
-      <entry key="H1" value="3.410135683035038" />
-      <entry key="H2" value="4.7873731549222915" />
-      <entry key="H4" value="6.876208035099915" />
-      <entry key="D1" value="11.435598734681289" />
-      <entry key="W1" value="12.757205672902295" />
-    </decayedSelected>
-    <decayedShown>
-      <entry key="MS100" value="3.0558390716156862E-6" />
-      <entry key="MS500" value="0.07889075200700722" />
-      <entry key="S2" value="0.5299763916986409" />
-      <entry key="S5" value="0.7757157503823853" />
-      <entry key="S10" value="0.8807472681662956" />
-      <entry key="S30" value="0.9585711014875894" />
-      <entry key="S60" value="0.9830541181782535" />
-      <entry key="M2" value="1.0562326136326765" />
-      <entry key="M5" value="2.7706251863501565" />
-      <entry key="M10" value="16.17084516885265" />
-      <entry key="M15" value="35.26279728411416" />
-      <entry key="M30" value="82.58762577838094" />
-      <entry key="H1" value="134.5277354651419" />
-      <entry key="H2" value="222.66241154151749" />
-      <entry key="H4" value="402.02046486307967" />
-      <entry key="D1" value="873.6217983435005" />
-      <entry key="W1" value="1022.2535610967805" />
-    </decayedShown>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
   &quot;fromUser&quot;: false
@@ -123,7 +56,7 @@
   <component name="ProjectSessionTemplates">
     <option name="panelTemplate">
       <template>
-        <option name="modeId" value="plan" />
+        <option name="modeId" value="Agent" />
         <option name="model">
           <model>
             <option name="modelType" value="builtin_id" />
@@ -144,7 +77,6 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.server.js.executor": "Run",
     "Node.js.srcController.js.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -156,26 +88,18 @@
     "javascript.nodejs.core.library.configured.version": "24.21.0",
     "javascript.nodejs.core.library.typings.version": "24.19.2",
     "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "C:/Users/niels/WebstormProjects/FeedbackStarWarsOpgave/postmanTest",
-    "node.js.detected.package.eslint": "true",
+    "last_opened_file_path": "C:/Users/niels/WebstormProjects/feedbackstarwars",
     "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\gusta\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\niels\WebstormProjects\FeedbackStarWarsOpgave\postmanTest" />
       <recent name="C:\Users\niels\WebstormProjects\feedbackstarwars" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tag\WebstormProjects\FeedbackStarWarsOpgave\public\js" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -199,10 +123,9 @@
       <workItem from="1793013642497" duration="627000" />
       <workItem from="1793016737937" duration="98000" />
       <workItem from="1793018506404" duration="2757000" />
-      <workItem from="1793177813924" duration="6123000" />
-      <workItem from="1793264491024" duration="15000" />
-      <workItem from="1793264528607" duration="1270000" />
-      <workItem from="1793266289244" duration="15205000" />
+      <workItem from="1793177813924" duration="2240000" />
+      <workItem from="1793180667693" duration="319000" />
+      <workItem from="1793181041972" duration="692000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -308,55 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793178472946</updated>
     </task>
-    <task id="LOCAL-00014" summary="Changed routes so that the server accepts all routes and that the routes themselves deceide if it is valid or not.&#10;&#10;Changed validate name again so that it checks if the name is and not if the name is not a certin lentgh.">
+    <task id="LOCAL-00014" summary="mermaid splash">
       <option name="closed" value="true" />
-      <created>1793180207137</created>
+      <created>1793180909224</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1793180207138</updated>
+      <updated>1793180909224</updated>
     </task>
-    <task id="LOCAL-00015" summary="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times.">
-      <option name="closed" value="true" />
-      <created>1793182043951</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1793182043951</updated>
-    </task>
-    <task id="LOCAL-00016" summary="l">
-      <option name="closed" value="true" />
-      <created>1793265441266</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1793265441266</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend">
-      <option name="closed" value="true" />
-      <created>1793274671375</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1793274671375</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Added Postman Test.">
-      <option name="closed" value="true" />
-      <created>1793301710434</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1793301710434</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Added Postman Test.">
-      <option name="closed" value="true" />
-      <created>1793301717167</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1793301717167</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,11 +267,7 @@
     <MESSAGE value="d" />
     <MESSAGE value="service, controller, app, route,server, jedi og logger done" />
     <MESSAGE value="Changed validation in srcService for validate name and planet. Name was set for less then 2 for string amount but message said that it was below 3 letters in a 4 letter name. &lt; has been change to &gt;. Changed validate planet, it checked if the sting is a string throw error that it is not a string. changed === to !==, if value is not a string it now throws the error as it should." />
-    <MESSAGE value="Changed routes so that the server accepts all routes and that the routes themselves deceide if it is valid or not.&#10;&#10;Changed validate name again so that it checks if the name is and not if the name is not a certin lentgh." />
-    <MESSAGE value="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times." />
-    <MESSAGE value="l" />
-    <MESSAGE value="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend" />
-    <MESSAGE value="Added Postman Test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Postman Test." />
+    <MESSAGE value="mermaid splash" />
+    <option name="LAST_COMMIT_MESSAGE" value="mermaid splash" />
   </component>
 </project>

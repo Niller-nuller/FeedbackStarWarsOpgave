@@ -1,31 +1,70 @@
 ## Arkitektur
 
+
 ```mermaid
 flowchart LR
-    Client[Client] --> Routes[srcRoute.js]
-    Routes --> Controller[srcController.js]
-    Controller --> Service[srcService.js]
-    Service --> Archive[(Archive.js)]
+    Browser["Browser<br/>index.html, archives.js, api.js"]
+    Server[server.js] --> App[app.js]
+
+    Browser -->|"GET / and /js/*"| Static["express.static<br/>public/"]
+    Browser -->|"fetch /api/archive"| Routes[srcRoute.js]
+
+    subgraph App_["app.js"]
+        Static
+        Routes --> Controller[srcController.js]
+        Controller --> Service[srcService.js]
+        Service --> Data[(archive.js)]
+        Data --> Json[(archive.json)]
+        Routes -. "no match" .-> NotFound["404 handler<br/>Page Not Found"]
+        Controller -. "next(err)" .-> ErrorH["Error handler<br/>status + message"]
+        Service -. "throws" .-> ErrorH
+    end
+
+    Logger[logger.js] -. "logs every request" .-> App
 ```
 
 ```mermaid
 sequenceDiagram
-    Client->>Route: POST /archive
+    participant UI as archives.js
+    participant Api as api.js
+    participant Route as srcRoute.js
+    participant Controller as srcController.js
+    participant Service as srcService.js
+    participant Err as Error handler (app.js)
+
+    UI->>Api: api('/archive', POST, body)
+    Api->>Route: POST /api/archive
     Route->>Controller: create(req, res)
     Controller->>Service: createEntry(body)
-    Service->>Data: archive.push(...)
-    Service-->>Controller: entry
-    Controller-->>Client: 201 Entry registered
+
+    alt valid data
+        Service-->>Controller: entry
+        Controller-->>Api: 201 JSON
+        Api-->>UI: entry
+        UI->>UI: loadEntries() and render()
+    else invalid data
+        Service-->>Err: throws error with status
+        Err-->>Api: 4xx { error: message }
+        Api-->>UI: throw new Error(message)
+        UI->>UI: showMessage(error, true)
+    end
 ```
 ```mermaid
 flowchart TD
     Server[server.js] --> App[src/app.js]
-    App --> Logger[middleware/logger.js]
-    App --> Routes[routes/srcRoute.js]
+
+    App --> Logger[middlewares/logger.js]
+    App --> Static["express.static<br/>public/"]
+    App -->|"/api"| Routes[routes/srcRoute.js]
+    App --> Errors["404 + error handler"]
+
+    Static --> Frontend["index.html<br/>js/archives.js<br/>js/api.js"]
+
     Routes --> Controller[controllers/srcController.js]
     Controller --> Service[services/srcService.js]
     Service --> Data[data/archive.js]
 ```
+
 
 Vi har valgt denne aritektur fordi den giver bedre oversigt over programmet og dens koden,
 det er letter at teste, isolere og bug fikse når små dele af koden er bredt ud over programmet. -Niels
