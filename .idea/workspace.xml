@@ -4,8 +4,7 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="l">
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +124,7 @@
       <workItem from="1793018506404" duration="2757000" />
       <workItem from="1793177813924" duration="6123000" />
       <workItem from="1793264491024" duration="15000" />
-      <workItem from="1793264528607" duration="840000" />
+      <workItem from="1793264528607" duration="1270000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -247,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793182043951</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="l">
+      <option name="closed" value="true" />
+      <created>1793265441266</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1793265441266</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +284,7 @@
     <MESSAGE value="Changed validation in srcService for validate name and planet. Name was set for less then 2 for string amount but message said that it was below 3 letters in a 4 letter name. &lt; has been change to &gt;. Changed validate planet, it checked if the sting is a string throw error that it is not a string. changed === to !==, if value is not a string it now throws the error as it should." />
     <MESSAGE value="Changed routes so that the server accepts all routes and that the routes themselves deceide if it is valid or not.&#10;&#10;Changed validate name again so that it checks if the name is and not if the name is not a certin lentgh." />
     <MESSAGE value="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times." />
+    <MESSAGE value="l" />
+    <option name="LAST_COMMIT_MESSAGE" value="l" />
   </component>
 </project>
