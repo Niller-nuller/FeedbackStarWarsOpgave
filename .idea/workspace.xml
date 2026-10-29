@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BackgroundAgentGlobalSettings">
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="l">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend">
+      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/archives.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/archives.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +45,75 @@
     &quot;assignee&quot;: &quot;Niller-nuller&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Niller-nuller/FeedbackStarWarsOpgave.git&quot;,
-    &quot;accountId&quot;: &quot;fa24a1da-2622-4fd2-ac2d-c3a1e6d05eae&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Niller-nuller/FeedbackStarWarsOpgave",
+    "accountId": "1bf659aa-578c-4782-930f-e28aad028a20"
   }
-}</component>
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000000042" />
+      <entry key="S30" value="1.0000162759355824" />
+      <entry key="S60" value="1.0040345400814745" />
+      <entry key="M2" value="1.065882140810693" />
+      <entry key="M5" value="2.6673744103318677" />
+      <entry key="M10" value="15.587812081080436" />
+      <entry key="M15" value="34.15361090823508" />
+      <entry key="M30" value="80.33333104916952" />
+      <entry key="H1" value="131.14521601136" />
+      <entry key="H2" value="217.89559749083892" />
+      <entry key="H4" value="395.16007917567777" />
+      <entry key="D1" value="862.1909570239703" />
+      <entry key="W1" value="1009.4971249011525" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="3.0633827826385284E-186" />
+      <entry key="S5" value="6.229892195209637E-75" />
+      <entry key="S10" value="7.894846804927016E-38" />
+      <entry key="S30" value="4.555486825007806E-13" />
+      <entry key="S60" value="8.180435221165541E-7" />
+      <entry key="M2" value="0.0012184520468441627" />
+      <entry key="M5" value="0.11235236363427148" />
+      <entry key="M10" value="0.6056518347239411" />
+      <entry key="M15" value="1.1406408036414084" />
+      <entry key="M30" value="2.2894566901655797" />
+      <entry key="H1" value="3.410135683035038" />
+      <entry key="H2" value="4.7873731549222915" />
+      <entry key="H4" value="6.876208035099915" />
+      <entry key="D1" value="11.435598734681289" />
+      <entry key="W1" value="12.757205672902295" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="3.0558390716156862E-6" />
+      <entry key="MS500" value="0.07889075200700722" />
+      <entry key="S2" value="0.5299763916986409" />
+      <entry key="S5" value="0.7757157503823853" />
+      <entry key="S10" value="0.8807472681662956" />
+      <entry key="S30" value="0.9585711014875894" />
+      <entry key="S60" value="0.9830541181782535" />
+      <entry key="M2" value="1.0562326136326765" />
+      <entry key="M5" value="2.7706251863501565" />
+      <entry key="M10" value="16.17084516885265" />
+      <entry key="M15" value="35.26279728411416" />
+      <entry key="M30" value="82.58762577838094" />
+      <entry key="H1" value="134.5277354651419" />
+      <entry key="H2" value="222.66241154151749" />
+      <entry key="H4" value="402.02046486307967" />
+      <entry key="D1" value="873.6217983435005" />
+      <entry key="W1" value="1022.2535610967805" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
   &quot;fromUser&quot;: false
@@ -76,29 +146,37 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Node.js.server.js.executor": "Run",
     "Node.js.srcController.js.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Patrick-branch",
     "git.auto.fetch.suggestion.counter": "2",
     "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "26.10.0",
-    "javascript.nodejs.core.library.typings.version": "26.6.6",
+    "javascript.nodejs.core.library.configured.version": "24.21.0",
+    "javascript.nodejs.core.library.typings.version": "24.19.2",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/niels/WebstormProjects/feedbackstarwars",
+    "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\gusta\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\niels\WebstormProjects\feedbackstarwars" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tag\WebstormProjects\FeedbackStarWarsOpgave\public\js" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -125,6 +203,7 @@
       <workItem from="1793177813924" duration="6123000" />
       <workItem from="1793264491024" duration="15000" />
       <workItem from="1793264528607" duration="1270000" />
+      <workItem from="1793266289244" duration="15205000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -254,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793265441266</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend">
+      <option name="closed" value="true" />
+      <created>1793274671375</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1793274671375</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +372,7 @@
     <MESSAGE value="Changed routes so that the server accepts all routes and that the routes themselves deceide if it is valid or not.&#10;&#10;Changed validate name again so that it checks if the name is and not if the name is not a certin lentgh." />
     <MESSAGE value="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times." />
     <MESSAGE value="l" />
-    <option name="LAST_COMMIT_MESSAGE" value="l" />
+    <MESSAGE value="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend" />
   </component>
 </project>
