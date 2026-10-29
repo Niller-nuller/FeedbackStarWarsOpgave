@@ -27,9 +27,10 @@ flowchart TD
     Service --> Data[data/archive.js]
 ```
 
-Vi har valgt denne aritektur over den giver bedre oversigt over programmet og dens koden,
+Vi har valgt denne aritektur fordi den giver bedre oversigt over programmet og dens koden,
 det er letter at teste, isolere og bug fikse når små dele af koden er bredt ud over programmet. -Niels
 
+denne struktur er også i overensstemmelse med clean code arkitekuren som vi er blevet lært. den opretholder en standerd som gør det nemmer at diagnostisere problem og bugs i koden. -G.Olsen
 
 refleksion:
 
