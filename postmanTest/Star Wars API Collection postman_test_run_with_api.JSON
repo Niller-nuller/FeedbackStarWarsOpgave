@@ -1,0 +1,81 @@
+{
+	"id": "6ae33799eb260da3424c316a",
+	"name": "Star Wars API Collection",
+	"timestamp": "2026-10-29T12:10:03.555Z",
+	"collection_id": "14f06cA344d6ac4C2ccB624a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 19,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-10-29T12:10:01.936Z",
+	"totalFail": 2,
+	"results": [],
+	"count": 1,
+	"totalTime": 0,
+	"collection": {
+		"requests": [
+			{
+				"id": "BbAa91bc0aEaB2C5d0A866fE"
+			},
+			{
+				"id": "Cb6e51386EecA0e48E5C2088"
+			},
+			{
+				"id": "BbCC5dc854e0ae478c7aE5ee"
+			},
+			{
+				"id": "CCdF9D5A6211cdb3c47AFdc0"
+			},
+			{
+				"id": "058C7CaFdaEeA788ae8Eb3ea"
+			},
+			{
+				"id": "AAD03CeeDBcce23ecc5c9c5E"
+			},
+			{
+				"id": "f2b06bcdb2E30dCfb03f1f4a"
+			},
+			{
+				"id": "ac8BcEFBb48e255Bfe51E44F"
+			},
+			{
+				"id": "a1601e9Ba570cDbF7f03AbdC"
+			},
+			{
+				"id": "c22527E71ad2E8F399D0ECB0"
+			},
+			{
+				"id": "3BD6E7F54dF3FBEb64FEcE99"
+			},
+			{
+				"id": "9eE9bdbCED674Dcb0E55AFbD"
+			},
+			{
+				"id": "4897D27aea96e9aF3b8e4e6F"
+			},
+			{
+				"id": "AAAbdaC0D11aADaad8febDA8"
+			},
+			{
+				"id": "18Ea31Cb014d8Db7fC1C5Eb8"
+			},
+			{
+				"id": "a8FfC76E27Eb20791BaBB559"
+			},
+			{
+				"id": "8cA733561e772F1CFa59EfaB"
+			},
+			{
+				"id": "dDeB4bcBAC50f4c7AeF9Cd47"
+			},
+			{
+				"id": "85Cc50EF8Ab3b9aBB62C1aB0"
+			},
+			{
+				"id": "37F69CE6f24BC8a523c3702d"
+			}
+		]
+	}
+}
