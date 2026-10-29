@@ -1,7 +1,18 @@
-const express = require('express');
-const route = express.Router();
+const express = require("express");
 const srcController = require('../controllers/srcController.js');
 
-route.get('/jedi', srcController.getAllJedi);
+const routes = express.Router();
 
-module.exports = route;
+routes.get('/archive', srcController.getAllEntries);
+routes.get('/archive/download', srcController.download);
+routes.get('/gettoluke', srcController.getToLuke);
+routes.post('/archive', srcController.createEntry);
+routes.get('/archive/:id', srcController.getById);
+routes.put('/archive/:id', srcController.updateEntry);
+routes.delete('/archive/:id', srcController.deleteEntry);
+
+
+// add more routes here for other CRUD operations (create, update, delete) as needed
+
+
+module.exports = routes;
