@@ -16,6 +16,3 @@ async function api(path, { body, headers, ...options} = {}) {
     if (res.status === 204) return null;
     return res.json();
 }
-
-const users = await api('/users');
-await api('/users', {method: 'POST', body: JSON.stringify(users)});

@@ -7,11 +7,12 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Jesus Christ I hate Webstorm">
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend">
+      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/archives.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/archives.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,61 +57,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0283599736036613" />
-      <entry key="MS500" value="1.4903895019942757" />
-      <entry key="S2" value="1.8368262426833915" />
-      <entry key="S5" value="1.931223905948296" />
-      <entry key="S10" value="1.96500781828942" />
-      <entry key="S30" value="2.0993374364903814" />
-      <entry key="S60" value="3.8363422880127795" />
-      <entry key="M2" value="11.551415234430957" />
-      <entry key="M5" value="34.287418460749755" />
-      <entry key="M10" value="56.40577947752851" />
-      <entry key="M15" value="70.87118805876115" />
-      <entry key="M30" value="116.17645611656384" />
-      <entry key="H1" value="204.23303188132022" />
-      <entry key="H2" value="304.9489787555015" />
-      <entry key="H4" value="383.3340164878319" />
-      <entry key="D1" value="469.8481895745408" />
-      <entry key="W1" value="487.05677682252946" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000000042" />
+      <entry key="S30" value="1.0000162759355824" />
+      <entry key="S60" value="1.0040345400814745" />
+      <entry key="M2" value="1.065882140810693" />
+      <entry key="M5" value="2.6673744103318677" />
+      <entry key="M10" value="15.587812081080436" />
+      <entry key="M15" value="34.15361090823508" />
+      <entry key="M30" value="80.33333104916952" />
+      <entry key="H1" value="131.14521601136" />
+      <entry key="H2" value="217.89559749083892" />
+      <entry key="H4" value="395.16007917567777" />
+      <entry key="D1" value="862.1909570239703" />
+      <entry key="W1" value="1009.4971249011525" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="4.11926821208388E-85" />
-      <entry key="S5" value="1.7616840737978775E-34" />
-      <entry key="S10" value="1.3272844735767373E-17" />
-      <entry key="S30" value="2.367670908568802E-6" />
-      <entry key="S60" value="0.0015387237921631047" />
-      <entry key="M2" value="0.03922656997721874" />
-      <entry key="M5" value="0.27380724833235937" />
-      <entry key="M10" value="0.5260997451274453" />
-      <entry key="M15" value="0.6694094617680485" />
-      <entry key="M30" value="0.9474603723820318" />
-      <entry key="H1" value="1.2740252428803827" />
-      <entry key="H2" value="1.5609309096636155" />
-      <entry key="H4" value="1.7566197374104076" />
-      <entry key="D1" value="1.955611990744253" />
-      <entry key="W1" value="1.9935576693879788" />
+      <entry key="S2" value="3.0633827826385284E-186" />
+      <entry key="S5" value="6.229892195209637E-75" />
+      <entry key="S10" value="7.894846804927016E-38" />
+      <entry key="S30" value="4.555486825007806E-13" />
+      <entry key="S60" value="8.180435221165541E-7" />
+      <entry key="M2" value="0.0012184520468441627" />
+      <entry key="M5" value="0.11235236363427148" />
+      <entry key="M10" value="0.6056518347239411" />
+      <entry key="M15" value="1.1406408036414084" />
+      <entry key="M30" value="2.2894566901655797" />
+      <entry key="H1" value="3.410135683035038" />
+      <entry key="H2" value="4.7873731549222915" />
+      <entry key="H4" value="6.876208035099915" />
+      <entry key="D1" value="11.435598734681289" />
+      <entry key="W1" value="12.757205672902295" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.6029288742353509" />
-      <entry key="MS500" value="1.0238270847452706" />
-      <entry key="S2" value="1.5636748340039959" />
-      <entry key="S5" value="1.7989245764635493" />
-      <entry key="S10" value="1.8944012833166823" />
-      <entry key="S30" value="2.0722202146969586" />
-      <entry key="S60" value="3.80384047660391" />
-      <entry key="M2" value="11.52297987720445" />
-      <entry key="M5" value="34.466703674844126" />
-      <entry key="M10" value="56.85193317069301" />
-      <entry key="M15" value="71.47496712610484" />
-      <entry key="M30" value="117.07964090298087" />
-      <entry key="H1" value="205.47837290136695" />
-      <entry key="H2" value="306.49267618862416" />
-      <entry key="H4" value="385.08102396450977" />
-      <entry key="D1" value="471.8020293962253" />
-      <entry key="W1" value="489.05007666768347" />
+      <entry key="MS100" value="3.0558390716156862E-6" />
+      <entry key="MS500" value="0.07889075200700722" />
+      <entry key="S2" value="0.5299763916986409" />
+      <entry key="S5" value="0.7757157503823853" />
+      <entry key="S10" value="0.8807472681662956" />
+      <entry key="S30" value="0.9585711014875894" />
+      <entry key="S60" value="0.9830541181782535" />
+      <entry key="M2" value="1.0562326136326765" />
+      <entry key="M5" value="2.7706251863501565" />
+      <entry key="M10" value="16.17084516885265" />
+      <entry key="M15" value="35.26279728411416" />
+      <entry key="M30" value="82.58762577838094" />
+      <entry key="H1" value="134.5277354651419" />
+      <entry key="H2" value="222.66241154151749" />
+      <entry key="H4" value="402.02046486307967" />
+      <entry key="D1" value="873.6217983435005" />
+      <entry key="W1" value="1022.2535610967805" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -167,7 +168,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "ts.external.directory.path": "C:\\Users\\gusta\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2026.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -202,7 +203,7 @@
       <workItem from="1793177813924" duration="6123000" />
       <workItem from="1793264491024" duration="15000" />
       <workItem from="1793264528607" duration="1270000" />
-      <workItem from="1793266289244" duration="5657000" />
+      <workItem from="1793266289244" duration="15205000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <option name="closed" value="true" />
@@ -332,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793265441266</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend">
+      <option name="closed" value="true" />
+      <created>1793274671375</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1793274671375</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +372,7 @@
     <MESSAGE value="Changed routes so that the server accepts all routes and that the routes themselves deceide if it is valid or not.&#10;&#10;Changed validate name again so that it checks if the name is and not if the name is not a certin lentgh." />
     <MESSAGE value="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times." />
     <MESSAGE value="l" />
-    <option name="LAST_COMMIT_MESSAGE" value="l" />
+    <MESSAGE value="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend" />
   </component>
 </project>
