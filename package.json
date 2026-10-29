@@ -1,7 +1,7 @@
 {
   "name": "feedbackstarwars",
   "version": "1.0.0",
-  "description": "",
+  "description": "```mermaid\r flowchart LR\r     Client[Client] --> Routes[srcRoute.js]\r     Routes --> Controller[srcController.js]\r     Controller --> Service[srcService.js]\r     Service --> Archive[(Archive.js)]\r ```",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Niller-nuller/FeedbackStarWarsOpgave#readme",
   "dependencies": {
-    "express": "^5.3.0"
+    "express": "^5.3.0",
+    "mongoose": "^9.11.4"
   }
 }

@@ -1,6 +1,5 @@
-const archiveEntries = require('../data/archive.js');
-const {entries} = require("../data/archive");
-const {name} = require("express/lib/view");
+const Entry = require('../data/archive');
+const mongoose = require('mongoose');
 const path = require('path')
 
 function createError(status, message) {
@@ -8,50 +7,54 @@ function createError(status, message) {
     error.status = status;
     return error;
 }
-
-function readAllEntries() {
-    return archiveEntries.entries;
+function checkId(id) {
+    if (!mongoose.isValidObjectId(id)) {
+        throw createError(400, `${id} is not a valid id`);
+    }
 }
-function getEntryById(id) {
-    const entry = archiveEntries.entries.find(j => j.id === parseInt(id));
+
+async function readAllEntries() {
+    return await Entry.find()
+}
+async function getEntryById(id) {
+    checkId(id);
+    const entry = await Entry.findById(id)
     if (!entry) {
         throw createError(404, `entry not found with requested id of: ${id}`);
     }
     return entry;
 }
-function createEntry({name, role, planet}) {
-
-    validateName(name);
-    validateRole(role);
-    validatePlanet(planet);
-    // import rules for the diffent data types here
-    const entry = {
-        id: archiveEntries.getNextId(),
-        name,
-        role,
-        planet
-    };
-    archiveEntries.entries.push(entry);
-    return entry;
-}
-function updateEntry(id, {name, role, planet}) {
-    const entry = getEntryById(id);
+async function createEntry({name, role, planet}) {
 
     validateName(name);
     validateRole(role);
     validatePlanet(planet);
 
-    entry.name = name;
-    entry.role = role;
-    entry.planet = planet;
+    return await Entry.create({ name, role, planet});
+}
+async function updateEntry(id, {name, role, planet}) {
+    checkId(id);
+    validateName(name);
+    validateRole(role);
+    validatePlanet(planet);
+
+    const entry = await Entry.findByIdAndUpdate(
+        id,
+        { name, role, planet },
+        { new: true, runValidators: true }
+    );
+    if (!entry) {
+        throw createError(404, `entry not found with requested id of: ${id}`);
+    }
     return entry;
 }
-function deleteEntry(id) {
-    const index = archiveEntries.entries.findIndex(j => j.id === parseInt(id));
-    if (index === -1) {
+
+async function deleteEntry(id) {
+    checkId(id);
+    const entry = await Entry.findByIdAndDelete(id);
+    if (!entry) {
         throw createError(404, 'entry not found');
     }
-    archiveEntries.entries.splice(index, 1);
 }
 
 function validateName(name) {
@@ -101,15 +104,13 @@ function downloadFile(){
     return path.join(__dirname, '../data/archive.json');
 }
 
-function findLuke(){
-    const name = "Luke Skywalker"
-    const luke = archiveEntries.entries.find(entry => entry.name === name);
-    if(luke === undefined){
+
+async function findLuke() {
+    const luke = await Entry.findOne({ name: "Luke Skywalker" });
+    if (!luke) {
         throw createError(500, "Luke is missing!");
     }
     return luke;
 }
 
-
-
-module.exports = {readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry,downloadFile ,findLuke};
+module.exports = { readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry, downloadFile, findLuke };

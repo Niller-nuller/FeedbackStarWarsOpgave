@@ -5,60 +5,66 @@ function handleError(res, error) {
     res.status(status).json({error: error.message});
 }
 
-function getAllEntries(req, res) {
-    res.status(200).json(srcService.readAllEntries());
+async function getAllEntries(req, res) {
+    try {
+        const entries = await srcService.readAllEntries();
+        res.status(200).json(entries);
+    } catch (error) {
+        handleError(res, error);
+    }
 }
 
-function getById(req, res) {
+async function getById(req, res) {
     try {
-        const entry = srcService.getEntryById(req.params.id);
+        const entry = await srcService.getEntryById(req.params.id);
         res.status(200).json(entry);
     } catch (error) {
         handleError(res, error);
     }
 }
 
-function createEntry(req, res) {
+async function createEntry(req, res) {
     try {
-        const entry = srcService.createEntry(req.body);
-        res.status(201).json({status: "entry has been created", entry});
+        const entry = await srcService.createEntry(req.body);
+        res.status(201).json(entry);
     } catch (error) {
         handleError(res, error);
     }
 }
-function updateEntry(req, res) {
+async function updateEntry(req, res) {
     try {
-        const entry = srcService.updateEntry(req.params.id, req.body);
-        res.status(200).json({status: "entry has been updated", entry});
+        const entry = await srcService.updateEntry(req.params.id, req.body);
+        res.status(200).json({ status: "entry has been updated", entry });
     } catch (error) {
         handleError(res, error);
     }
 }
-function deleteEntry(req, res) {
+async function deleteEntry(req, res) {
     try {
-        srcService.deleteEntry(req.params.id);
-        res.status(204).json({status: "entry has been deleted"});
+        await srcService.deleteEntry(req.params.id);
+        res.status(200).json({ status: "entry has been deleted" });
     } catch (error) {
         handleError(res, error);
     }
 }
 
-function download(req, res)  {
-    const filePath = srcService.downloadFile();
-    console.log(filePath)
-    res.status(200).download(filePath,'archive.json', (err) => {
-        if(err){
-            console.error(err);
-            if(!res.headersSent) {
-                res.status(500).send('Could not find the file');
-            }
-        }
-    });
+async function download(req, res) {
+    try {
+        const entries = await srcService.readAllEntries();
+        res.setHeader('Content-Disposition', 'attachment; filename=archive.json');
+        res.json(entries);
+    } catch (error) {
+        handleError(res, error);
+    }
 }
 
-function getToLuke(req, res) {
-    const luke = srcService.findLuke();
-    res.status(200).redirect(`/archive/${luke.id}`);
+async function getToLuke(req, res) {
+    try {
+        const luke = await srcService.findLuke();
+        res.redirect(`/archive/${luke._id}`);
+    } catch (error) {
+        handleError(res, error);
+    }
 }
 module.exports = {
     getAllEntries,
@@ -68,4 +74,4 @@ module.exports = {
     deleteEntry,
     download,
     getToLuke
-}
+};

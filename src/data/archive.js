@@ -1,16 +1,14 @@
-let entries = [
-    {
-    id: 1,
-    name: "Luke Skywalker",
-    role: "Jedi",
-    planet: "Tatooine"
-    }
-]
+const mongoose = require('mongoose');
 
-let nextId = 2;
+const entrySchema = new mongoose.Schema({
+    name: { type: String, required: true, trim: true, minlength: 3 },
+    role: {
+        type: String,
+        required: true,
+        lowercase: true,
+        enum: ['jedi', 'sith', 'smuggler', 'rebel']
+    },
+    planet: { type: String, required: true }
+});
 
-function getNextId() {
-    return nextId++;
-}
-
-module.exports = {entries, getNextId};
+module.exports = mongoose.model('Entry', entrySchema);
