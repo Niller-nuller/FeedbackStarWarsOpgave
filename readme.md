@@ -107,3 +107,7 @@ hvad er blivet kaldt og hvornår. -Niels
 
 Vi har anvendt postman til at kalde vores endpoints, både for teste om det virker når det skal og om den applikationen
 ordenligt tager sig af fejl og validere data korrekt med fejl beskeder. -Niels
+
+## Data og download
+
+Arkivets entries opbevares i hukommelsen, og download-endpointet eksporterer den aktuelle API-tilstand som JSON. Data nulstilles, når serveren genstartes; downloadfilen er ikke persistent lagring.

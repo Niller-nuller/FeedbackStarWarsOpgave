@@ -17,8 +17,18 @@ app.use((req, res ) => {
 });
 
 app.use((err, req, res, next) => {
-    console.error(err);
-    res.status(err.status || 500).json({error: err.message || 'server error'})
+    const status = Number.isInteger(err.status) && err.status >= 400 && err.status < 600
+        ? err.status
+        : 500;
+    if (status >= 500) {
+        console.error(err);
+    }
+    const message = err.type === 'entity.parse.failed'
+        ? 'Invalid JSON request body'
+        : status < 500
+            ? err.message
+            : 'Server error';
+    res.status(status).json({error: message});
 })
 
 module.exports = app;

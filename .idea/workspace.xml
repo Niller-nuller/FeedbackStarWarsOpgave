@@ -7,7 +7,9 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend" />
+    <list default="true" id="bbaffda4-9f85-4eca-833b-4f2cc905b69e" name="Changes" comment="Added Postman Test.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +17,7 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
+      <entry key="_C:/Users/niels/WebstormProjects/FeedbackStarWarsOpgave" value="3LNk74j7o99HOKQW8UpboEW3WH4" />
       <entry key="_C:/Users/niels/WebstormProjects/feedbackstarwars" value="3LEJMZs975W9wU2m03Rv6jlKmxH" />
     </persistenceIdMap>
   </component>
@@ -120,7 +123,7 @@
   <component name="ProjectSessionTemplates">
     <option name="panelTemplate">
       <template>
-        <option name="modeId" value="Agent" />
+        <option name="modeId" value="plan" />
         <option name="model">
           <model>
             <option name="modelType" value="builtin_id" />
@@ -153,7 +156,7 @@
     "javascript.nodejs.core.library.configured.version": "24.21.0",
     "javascript.nodejs.core.library.typings.version": "24.19.2",
     "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "C:/Users/niels/WebstormProjects/feedbackstarwars",
+    "last_opened_file_path": "C:/Users/niels/WebstormProjects/FeedbackStarWarsOpgave/postmanTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -168,6 +171,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niels\WebstormProjects\FeedbackStarWarsOpgave\postmanTest" />
       <recent name="C:\Users\niels\WebstormProjects\feedbackstarwars" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -336,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793274671375</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added Postman Test.">
+      <option name="closed" value="true" />
+      <created>1793301710434</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1793301710434</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added Postman Test.">
+      <option name="closed" value="true" />
+      <created>1793301717167</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1793301717167</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +388,7 @@
     <MESSAGE value="Implemented redirect gettoluke endpoint. We find luke in the archives and then get his id. It has been tested both with 1 and 5 for id and has worked both times." />
     <MESSAGE value="l" />
     <MESSAGE value="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Route kald ændret med /api/...&#10;Startet på html side med tilwind&#10;api i public mappe er lavet til at kalde backend" />
+    <MESSAGE value="Added Postman Test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Postman Test." />
   </component>
 </project>

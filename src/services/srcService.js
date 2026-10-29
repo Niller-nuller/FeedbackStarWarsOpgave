@@ -1,7 +1,4 @@
 const archiveEntries = require('../data/archive.js');
-const {entries} = require("../data/archive");
-const {name} = require("express/lib/view");
-const path = require('path')
 
 function createError(status, message) {
     const error = new Error(message);
@@ -12,6 +9,13 @@ function createError(status, message) {
 function readAllEntries() {
     return archiveEntries.entries;
 }
+
+function validateEntryBody(body) {
+    if (body === null || typeof body !== 'object' || Array.isArray(body)) {
+        throw createError(400, 'Request body must be a JSON object');
+    }
+}
+
 function getEntryById(id) {
     const entry = archiveEntries.entries.find(j => j.id === parseInt(id));
     if (!entry) {
@@ -19,8 +23,9 @@ function getEntryById(id) {
     }
     return entry;
 }
-function createEntry({name, role, planet}) {
-
+function createEntry(body) {
+    validateEntryBody(body);
+    const {name, role, planet} = body;
     validateName(name);
     validateRole(role);
     validatePlanet(planet);
@@ -34,8 +39,10 @@ function createEntry({name, role, planet}) {
     archiveEntries.entries.push(entry);
     return entry;
 }
-function updateEntry(id, {name, role, planet}) {
+function updateEntry(id, body) {
+    validateEntryBody(body);
     const entry = getEntryById(id);
+    const {name, role, planet} = body;
 
     validateName(name);
     validateRole(role);
@@ -97,19 +104,15 @@ function validatePlanet(planet) {
     }
 }
 
-function downloadFile(){
-    return path.join(__dirname, '../data/archive.json');
-}
-
 function findLuke(){
     const name = "Luke Skywalker"
     const luke = archiveEntries.entries.find(entry => entry.name === name);
     if(luke === undefined){
-        throw createError(500, "Luke is missing!");
+        throw createError(404, "Luke was not found");
     }
     return luke;
 }
 
 
 
-module.exports = {readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry,downloadFile ,findLuke};
+module.exports = {readAllEntries, getEntryById, createEntry, updateEntry, deleteEntry, findLuke};
