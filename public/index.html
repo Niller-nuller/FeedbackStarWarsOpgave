@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <h1>Archive</h1>
+
+    <form>
+        <input type="hidden" id="entry-id">
+        <input id="Name" placeholder="Name" required>
+        <input id="role" placeholder="Role" required>
+        <input id="planet" placeholder="Planet" required>
+        <div>
+            <button type="submit" id="save-btn">Add entry</button>
+            <button type="button" id="cancel-btn" hidden>Cancel edit</button>
+        </div>
+    </form>
+    <p id="message"></p>
+    <ul id="entries"></ul>
+
+    <a href="/api/archive/download">Download archive</a>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/archives.js"></script>
+</body>
